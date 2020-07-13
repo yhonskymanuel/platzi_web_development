@@ -7,55 +7,50 @@
     <title>Yhonsky Manuel</title>
     <link rel="icon" type="image/png" href="images/logo.png">
     <link rel="stylesheet" href="css/estilos.css">
-    <style>
-        header{
-            background: green;
-        }
-    </style>
 </head>
 <body>
-    <header style="color: aqua; background: brown;">
+    <header class="header">
         <div>
-            <figure>
+            <figure class="logo">
                 <img src="images/logo.png" alt="Logo de mi portaolio">
             </figure>
-            <nav>
+            <nav class="menu">
                 <ol>
-                    <li><a href="#experiencia">Experiencia</a></li>
-                    <li><a href="#cursos">Cursos</a></li>
-                    <li><a href="#contacto">Trabajemos juntos</a></li>
+                    <li><a class="link" href="#experience">Experiencia</a></li>
+                    <li><a class="link" href="#formation">Cursos</a></li>
+                    <li><a class="link" href="#contact">Trabajemos juntos</a></li>
                 </ol>
             </nav>
         </div>
     </header>
-    <section>
+    <section class="hero">
         <h1>Hola soy Manuel <br/> soy <strong>Ingeniero de Sistemas</strong> <br/> Y me gusta la <strong>programación</strong></h1>
         <img src="images/foto.jpg" alt="Foto principal" width="400px" height="500">
     </section>
-    <section id="experiencia">
+    <section id="experience" class="experience">
         <h2>Experiencia Laboral</h2>
-        <article>
-            <h3>Telefónica</h3>
-            <h6>Pasante</h6>
-            <p><small>Septiembre 2016 - Febrero 2017</small></p>
-            <p>Descripción de la experiencia</p>
+        <article class="job">
+            <h3 class="job-company">Telefónica</h3>
+            <h6 class="job-title">Pasante</h6>
+            <p class="job-date"><small>Septiembre 2016 - Febrero 2017</small></p>
+            <p class="job-description">Descripción de la experiencia</p>
         </article>
     </section>
-    <section id="cursos">
+    <section id="formation" class="formation">
         <h2>Cursos</h2>
-        <article>
-            <figure>
-                <img src="" alt="">
+        <article class="course">
+            <figure class="course-imageContainer">
+                <img class="course-image" src="images/platzi.png" alt="">
             </figure>
-            <p><strong>Nombre: </strong> Fundamentos de Ingeniería de Software</p>
-            <p><strong>Fecha: </strong> Febrero 2017</p>
-            <p><strong>Plataforma: </strong> Platzi</p>
-            <p>Descripcione del curso</p>
+            <p class="course-title"><strong>Nombre: </strong> Fundamentos de Ingeniería de Software</p>
+            <p class="course-date"><strong>Fecha: </strong> Febrero 2017</p>
+            <p class="course-platform"><strong>Plataforma: </strong> Platzi</p>
+            <p class="course-descriptiom">Descripcione del curso</p>
         </article>
     </section>
-    <section id="contacto">
-        <h2>¿Creamos algo juntos?</h2>
-        <form action="/suscripcion/">
+    <section id="contact" class="contact">
+        <form action="/suscripcion/" class="form-email">
+            <h2>¿Creamos algo juntos?</h2>
             <input type="text" placeholder="Déjame tu email">
             <button>Enviar</button>
         </form>
